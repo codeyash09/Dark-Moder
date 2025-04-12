@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  
+  margin-bottom: 200px;
+
+  transition: all 0.4s;
+
+  
+}
+
+::-webkit-scrollbar {
+   
+    scroll-behavior: smooth;
+}
+
+.article{
+  transition: opacity .3s;
+}
+
+.article.show{
+  
+  opacity: 0.2;
+}
+
+nav {
+  width: 25%;
+  height: 100vh;
+  padding: 100px 20px;
+  background-color: #d8d8d8;
+  border-color: white;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  transition: right 0.4s, background-color 0.4s, border-color 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 5px solid white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.4s;
+}
+
+
+nav.show{
+  right: 0px;
+  
+}
+
+.navItem{
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 10;
+  cursor: pointer;
+  
+}
+
+.bun{
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: #d8d8d8;
+  margin-bottom: 3px;
+  transition: background-color .4s;
+}
+
+.bun.show{
+  background-color: white;
+}
+
+
+/* Scroll Style  */
+
+
+h1{
+  font-size: 50px;
+  color: #d8d8d8;
+}
+
+img{
+  width: 500px;
+}
+
+.car{
+  z-index: -5;
+  margin: 20px auto;
+  width: 75%;
+  background-color: #d8d8d8;
+  height: 600px;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  right: 500px;
+  transition: right .4s, opacity .4s, background-color .4s;
+  opacity: 0;
+  
+}
+
+.cartext{
+  font-size: 36px;
+  text-align: left;
+  
+}
+
+.line{
+  padding: 6px 10px;
+  border-radius: 14px;
+  width: 5%;
+  background-color: white;
+}
+
+.car.slide{
+  right: 0;
+  opacity: 1;
+}
+
+button{
+  padding: 30px;
+  font-family: 'Comfortaa', cursive;
+  border: 7px solid #d8d8d8;
+  color: #d8d8d8;
+  background-color: white;
+  border-radius: 14px;
+  border-color: #d8d8d8;
+
+  transition: border-color .4s, color .4s, background-color .4s;
+}
+
+body.dark{
+  background-color: #292929;
+  color: white;
+}
+
+button.dark{
+  border-color: #414141;
+  color: white;
+  background-color: #292929;
+}
+
+
+.car.dark{
+  background-color: #414141;
+}
+
+nav.dark{
+  background-color: #414141;
+  border-color: #292929;
+}
+
+.bun.dark{
+  background-color: #414141;
+}
+
+.bun.dark.show{
+  background-color: #292929;
+}
